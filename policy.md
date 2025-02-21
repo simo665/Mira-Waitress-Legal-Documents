@@ -79,9 +79,21 @@ Our Bot is not intended for children under 13 years of age. We do not knowingly 
 
 ### **9. Bot Permissions**  
 In order to function, the Bot requires certain permissions from your Discord server, including but not limited to:  
-- **Read Messages**: To process commands and messages sent to the Bot.  
-- **Send Messages**: To respond to users and provide information.  
-- **Attach Files**: To allow users to upload and download files.  
+- **Add Reactions**: To react to messages when triggered by auto-reaction commands.  
+- **Attach Files**: To upload files or media when required.  
+- **Ban Members**: To ban users as part of moderation actions.  
+- **Change Nickname**: To update the bot’s nickname in your server.  
+- **Embed Links**: To send messages with embedded content.  
+- **Kick Members**: To kick users as part of moderation actions.  
+- **Manage Channels**: To create or manage channels for features like auto-threading.  
+- **Manage Messages**: To delete or moderate messages as needed.  
+- **Manage Webhooks**: To manage webhooks for logging or other functionalities.  
+- **Mention Everyone**: To mention roles or everyone when permitted.  
+- **Mute Members**: To mute users as part of moderation actions.  
+- **Read Message History**: To access message history for context in AI chat or moderation.  
+- **Send Messages**: To respond to users and send messages.  
+- **View Channels**: To view and interact with channels in your server.  
+
 These permissions are only used for the Bot's intended functionality and will not be misused.
 
 ---
