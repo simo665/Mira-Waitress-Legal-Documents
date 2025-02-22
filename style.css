@@ -85,6 +85,109 @@ h1::after {
     border: 1px solid var(--border-color);
 }
 
+/* Invite Card Styles */
+.invite-card {
+    background: linear-gradient(135deg, #ff8fa3 0%, #ff6b84 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+    text-align: center;
+    transform-origin: center;
+    animation: cardFloat 6s ease-in-out infinite;
+    position: relative;
+    overflow: hidden;
+}
+
+.invite-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 60%);
+    animation: shimmer 8s linear infinite;
+}
+
+.invite-content {
+    position: relative;
+    z-index: 1;
+}
+
+.invite-card h2 {
+    color: white;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.invite-card p {
+    margin-bottom: 1.5rem;
+    opacity: 0.9;
+    animation: fadeInUp 0.6s ease-out 0.2s backwards;
+}
+
+.invite-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.6s ease-out 0.4s backwards;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.invite-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--bg-color);
+}
+
+.button-icon {
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.invite-button:hover .button-icon {
+    transform: rotate(15deg);
+}
+
+/* Animations */
+@keyframes cardFloat {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 section {
     margin-bottom: 2rem;
     padding-bottom: 2rem;
@@ -140,7 +243,6 @@ strong {
 .contact-list {
     list-style: none;
     margin-left: 0;
-    padding-bottom: 10px;
 }
 
 .contact-list li {
@@ -167,6 +269,7 @@ strong {
     color: inherit;
     position: relative;
     overflow: hidden;
+    animation: fadeInUp 0.6s ease-out;
 }
 
 .document-card::before {
@@ -203,6 +306,7 @@ strong {
     border-radius: 12px;
     margin-top: 2rem;
     border: 1px solid var(--border-color);
+    animation: fadeInUp 0.6s ease-out;
 }
 
 @media (max-width: 768px) {
@@ -224,6 +328,14 @@ strong {
 
     h2 {
         font-size: 1.3rem;
+    }
+
+    .invite-card {
+        padding: 1.5rem;
+    }
+
+    .invite-card h2 {
+        font-size: 1.5rem;
     }
 }
 
