@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mira Waitress - Commands</title>
+    <link rel="stylesheet" href="commands.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Mira Waitress Commands</h1>
+            <p class="subtitle">Complete guide to all available commands</p>
+        </header>
+
+        <nav class="quick-nav">
+            <a href="#server-management" class="nav-item">🛠️ Server Management</a>
+            <a href="#moderation" class="nav-item">🔨 Moderation</a>
+            <a href="#currency" class="nav-item">💰 Currency</a>
+            <a href="#ai-chat" class="nav-item">🤖 AI Chat</a>
+            <a href="#prefix-commands" class="nav-item">❕ Prefix Commands</a>
+        </nav>
+
+        <main class="content">
+            <section id="server-management" class="command-section">
+                <h2>🛠️ Server Management</h2>
+                
+                <div class="subsection">
+                    <h3>🚪 Join/Leave Channels</h3>
+                    <div class="command-grid">
+                        <div class="command-card">
+                            <div class="command-name">/joins channel</div>
+                            <p class="command-desc">Set welcome channel</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/leaves channel</div>
+                            <p class="command-desc">Set farewell channel</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/joins embed</div>
+                            <p class="command-desc">Customize welcome message</p>
+                        </div>
+                    </div>
+                    <div class="preview-box">
+                        <div class="preview-title">Welcome Message Example</div>
+                        <img src="../previews/joins.jpg" alt="Welcome message preview" class="preview-image">
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>📜 Logging</h3>
+                    <div class="command-grid">
+                        <div class="command-card">
+                            <div class="command-name">/logging add-channel</div>
+                            <p class="command-desc">Add logging channel</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/logging remove-channel</div>
+                            <p class="command-desc">Remove logging channel</p>
+                        </div>
+                    </div>
+                    <div class="preview-box">
+                        <div class="preview-title">Server Logging Example</div>
+                        <img src="../previews/logging.jpg" alt="Logging preview" class="preview-image">
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>🤖 Auto Reactions</h3>
+                    <div class="command-grid">
+                        <div class="command-card">
+                            <div class="command-name">/autoreact add</div>
+                            <p class="command-desc">Add reaction triggers</p>
+                            <div class="command-note">
+                                <strong>Note:</strong> Separate multiple words and emojis with commas<br>
+                                <em>Example:</em><br>
+                                reactions: ❤️, 👋<br>
+                                words: hey, welcome, Hi
+                            </div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/autoreact remove</div>
+                            <p class="command-desc">Remove reaction triggers</p>
+                        </div>
+                    </div>
+                    <div class="preview-box">
+                        <div class="preview-title">Auto Reactions Example</div>
+                        <img src="../previews/autoreact.jpg" alt="Auto reactions preview" class="preview-image">
+                    </div>
+                </div>
+            <h3>💎 Booster Features</h3>
+                <div class="subsection">
+                    <div class="command-grid">
+                        <div class="command-card">
+                            <div class="command-name">/booster channel</div>
+                            <p class="command-desc">Set booster channel</p>
+                            <div class="command-note">
+                                <strong>Note:</strong> Server must have at least one boost. Use /boosters role first.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="preview-box">
+                        <div class="preview-title">Server Boost Board</div>
+                        <img src="../previews/boosters.jpg" alt="Booster announcement preview" class="preview-image">
+                    </div>
+                </div>
+
+                <div class="subsection">
+                    <h3>🧵 Auto Threading</h3>
+                    <div class="command-grid">
+                        <div class="command-card">
+                            <div class="command-name">/thread add</div>
+                            <p class="command-desc">Enable auto-threading</p>
+                            <div class="command-note">Optional: Add media-only parameter</div>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/thread remove</div>
+                            <p class="command-desc">Disable auto-threading</p>
+                        </div>
+                    </div>
+                    <div class="preview-box">
+                        <div class="preview-title">Auto Threading Example</div>
+                        <img src="../previews/threading.jpg" alt="Auto threading preview" class="preview-image">
+                    </div>
+                </div>
+            </section>
+
+            <section id="moderation" class="command-section">
+                <h2>🔨 Moderation</h2>
+                <div class="command-grid">
+                    <div class="command-card">
+                        <div class="command-name">/warn</div>
+                        <p class="command-desc">Warn a user</p>
+                        <div class="command-note">Can include mute duration</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/mute</div>
+                        <p class="command-desc">Mute a user</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/kick</div>
+                        <p class="command-desc">Kick a user</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/ban</div>
+                        <p class="command-desc">Ban a user</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/unmute</div>
+                        <p class="command-desc">Unmute a user</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/unban</div>
+                        <p class="command-desc">Unban a user</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/purge</div>
+                        <p class="command-desc">Delete up to 1,000 messages</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/appeals_link</div>
+                        <p class="command-desc">Set appeal link for punished users</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/say</div>
+                        <p class="command-desc">Send message as bot</p>
+                        <div class="command-note">Unauthorized mentions are automatically removed</div>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/stick set</div>
+                        <p class="command-desc">Stick a message</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/stick remove</div>
+                        <p class="command-desc">Remove stuck message</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="currency" class="command-section">
+                <h2>💰 Bot Currency</h2>
+                <div class="info-box">
+                    <p>Members can earn coins through:</p>
+                    <ul>
+                        <li>Server activity</li>
+                        <li>Daily rewards (/daily)</li>
+                        <li>Mini-games (/games)</li>
+                    </ul>
+                </div>
+                <div class="preview-box">
+                    <div class="preview-title">Bot Currency</div>
+                    <img src="../previews/coins.jpg" alt="Auto threading preview" class="preview-image">
+                </div>
+                <div class="subsection">
+                    <h3>🛍️ Shop Commands</h3>
+                    <div class="command-grid">
+                        <div class="command-card">
+                            <div class="command-name">/shop add</div>
+                            <p class="command-desc">Create shop item</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/shop show</div>
+                            <p class="command-desc">View shop items</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/shop remove</div>
+                            <p class="command-desc">Remove shop item</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/shop buy</div>
+                            <p class="command-desc">Purchase item</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/inventory</div>
+                            <p class="command-desc">View your items</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/items buy</div>
+                            <p class="command-desc">Reuse purchased item</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/item sell</div>
+                            <p class="command-desc">Sell an item</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/money show</div>
+                            <p class="command-desc">Check balance</p>
+                        </div>
+                        <div class="command-card">
+                            <div class="command-name">/money give</div>
+                            <p class="command-desc">Transfer money</p>
+                        </div>
+                    </div>
+                    <div class="preview-box">
+                        <div class="preview-title">Auto Threading Example</div>
+                        <img src="../previews/shop.jpg" alt="Auto threading preview" class="preview-image">
+                    </div>
+                </div>
+            </section>
+
+            <section id="ai-chat" class="command-section">
+                <h2>🤖 AI Chat</h2>
+                <div class="command-grid">
+                    <div class="command-card">
+                        <div class="command-name">/channel add</div>
+                        <p class="command-desc">Add AI chat channel</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/channel remove</div>
+                        <p class="command-desc">Remove AI chat channel</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/user block</div>
+                        <p class="command-desc">Block user from AI chat</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">/user unblock</div>
+                        <p class="command-desc">Unblock user from AI chat</p>
+                    </div>
+                </div>
+                <div class="preview-box">
+                    <div class="preview-title">AI Chat Interaction Example</div>
+                    <img src="../previews/aichat.jpg" alt="AI chat preview" class="preview-image">
+                </div>
+            </section>
+
+            <section id="prefix-commands" class="command-section">
+                <h2>❕ Prefix Commands</h2>
+                <div class="command-grid">
+                    <div class="command-card">
+                        <div class="command-name">m!channelslist</div>
+                        <p class="command-desc">List all server channels</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">m!purge</div>
+                        <p class="command-desc">Purge messages</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">m!stick</div>
+                        <p class="command-desc">Stick a message</p>
+                    </div>
+                    <div class="command-card">
+                        <div class="command-name">m!unstick</div>
+                        <p class="command-desc">Remove stuck message</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="important-notes">
+                <h2>💡 Important Notes</h2>
+                <ul>
+                    <li>Multiple configurations are supported simultaneously</li>
+                    <li>New features and commands are added regularly</li>
+                    <li>Slash commands (/) are the primary interaction method</li>
+                    <li>Use commas to separate multiple words/emojis in commands</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <nav class="footer-nav">
+                <a href="/index.html">Home</a>
+                <a href="/features.html">Features</a>
+                <a href="/terms.html">Terms</a>
+                <a href="/privacy.html">Privacy</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>
